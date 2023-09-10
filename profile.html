@@ -1,15 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./profile.css">
-</head>
-<body>
-    <h1>Hello</h1>
-    
+    <link rel="stylesheet" href="./profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="content_box">
+        <div class="left">
+          <div>
+            <img
+              src="./assets/my-pic.jpeg"
+              alt="Great Okafor"
+              data-testid="slackDisplayImage"
+            />
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="item">
+            <label>Slack Username:</label>
+            <span data-testid="slackUserName">Great Okafor</span>
+          </div>
+
+          <div class="item">
+            <label>Day of the week:</label>
+            <span data-testid="currentDayOfTheWeek"></span>
+          </div>
+
+          <div class="item">
+            <label>Current UTC:</label>
+            <span data-testid="currentUTCTime" id="utcTimeDisplay"> </span>
+          </div>
+
+          <div class="item">
+            <label>Track:</label>
+            <span data-testid="myTrack">FRONTEND</span>
+          </div>
+
+          <div class="link">
+            <a
+              href="https://github.com/Thelordgreat/personal--profile"
+              data-testid="githubURL"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>
+              Github source code
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="./profile.js"></script>
-</body>
+  </body>
 </html>
